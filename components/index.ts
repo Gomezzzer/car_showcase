@@ -5,7 +5,8 @@ import NavBar from "./Navbar";
 import SearchBar from "./Searchbar";
 import CustomFilter from './CustomFilter';
 import SearchManufacturer from './SearchManufacturer';
-import CarCard from './Carcard';
+import CarCard from './CarCard';
+import CarDetails from './CarDetails';
 
 
 
