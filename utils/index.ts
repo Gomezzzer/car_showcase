@@ -68,7 +68,7 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   const url = new URL("https://api.carscan.com/v3.0/image");
   const { make, model, year } = car;
 
-  url.searchParams.append('customer', 'apiKey');
+  url.searchParams.append('customer', 'IMAGIN_API_KEY');
   url.searchParams.append('make', make);
   url.searchParams.append('modelFamily', model.split(" ")[0]);
   url.searchParams.append('zoomType', 'fullscreen');
