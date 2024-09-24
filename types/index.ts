@@ -35,6 +35,7 @@ export interface CarCardProps {
   year: number;
   drive: string;
   cityMPG: number;
+  engine: string;
 }
 
 export interface CustomButtonProps {

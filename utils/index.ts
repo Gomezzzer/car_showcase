@@ -64,11 +64,12 @@ export async function fetchCars(filters: FilterProps) {
   return result;
 }
 
+
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-  const url = new URL("https://api.carscan.com/v3.0/image");
+  const url = new URL("https://cdn.imagin.studio/getimage");
   const { make, model, year } = car;
 
-  url.searchParams.append('customer', 'IMAGIN_API_KEY');
+  url.searchParams.append('customer', 'hrjavascript-mastery');
   url.searchParams.append('make', make);
   url.searchParams.append('modelFamily', model.split(" ")[0]);
   url.searchParams.append('zoomType', 'fullscreen');
@@ -78,3 +79,10 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
 
   return `${url}`;
 } 
+
+
+  
+
+
+
+
